@@ -59,7 +59,8 @@ function add(a, b){
 }
 
 function removeFromCart(item) {
-cart.splice(0,2)
+  let i = cart.findIndex(item => item === 'yam')
+  cart.splice(0,i)
 }
 
 function placeOrder(cardNumber) {
